@@ -45,7 +45,6 @@
   background-color: white;
   transition: all 0.3s ease;
 }
-
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -56,6 +55,8 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 5px;
+    width: 200px;
+    text-align: right;
   }
 
   .nav-links.active {
@@ -64,5 +65,9 @@
 
   .hamburger {
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 101; /* ensure above links */
   }
 }
