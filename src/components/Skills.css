@@ -1,0 +1,86 @@
+.skills-section {
+  padding: 3rem 2rem;
+  background-color: #1c293b;
+  color: #e2e8f0;
+  text-align: center; /* Center main title */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00adb5;
+}
+
+/* Cards side by side */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills,
+.learning {
+  flex: 1;
+  min-width: 280px;
+  background: #22354b;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.skills h3,
+.learning h3 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.skills-grid span {
+  background: #1c293b;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  border: 1px solid #00adb5;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.skills-grid span:hover {
+  transform: translateY(-3px);
+  background: #00adb5;
+  color: #1c293b;
+}
+
+/* Tags */
+.tags {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.tags span {
+  background: #00adb5;
+  color: #1c293b;
+  padding: 0.7rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

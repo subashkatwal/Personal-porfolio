@@ -1,0 +1,105 @@
+.education {
+  padding: 4rem 2rem;
+  background-color: #1c293b;
+  color: #e2e8f0;
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.education-subtitle {
+  text-align: center;
+  color: #a0aec0;
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Education Card */
+.edu-card {
+  background: #22354b;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.university {
+  color: #00adb5;
+  margin-top: 0.3rem;
+}
+
+.university span {
+  color: #cbd5e0;
+}
+
+.edu-info ul {
+  margin-top: 1rem;
+  list-style: disc inside;
+  color: #cbd5e0;
+  line-height: 1.6;
+}
+
+.edu-details {
+  text-align: right;
+  min-width: 120px;
+}
+
+.date {
+  background: #00adb5;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.gpa {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .edu-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .edu-details {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
