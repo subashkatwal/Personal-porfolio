@@ -1,7 +1,9 @@
-*{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,19 +11,33 @@
   min-height: 90vh;
   text-align: center;
   padding: 0 20px;
-  background-color: #1c293b;
-background-repeat: no-repeat;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% center;
   color: white;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .highlight {
-  color: #00adb5; /* Accent */
+  color: #00adb5;
 }
 
 .hero h3 {
@@ -29,6 +45,8 @@ background-size: cover;
   margin-bottom: 15px;
   font-weight: normal;
   color: #f5f6f7;
+  position: relative;
+  z-index: 2;
 }
 
 .hero p {
@@ -36,6 +54,8 @@ background-size: cover;
   margin-bottom: 20px;
   color: #ffffff;
   font-size: 1.2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .btn {
@@ -45,6 +65,8 @@ background-size: cover;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .btn-primary {
@@ -68,14 +90,25 @@ background-size: cover;
   color: white;
 }
 
-/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    background-position: center;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero {
+    background-position: center;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
+
   .hero h3 {
     font-size: 1rem;
   }
+
   .hero p {
     font-size: 0.9rem;
   }

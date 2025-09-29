@@ -1,15 +1,23 @@
 import React from "react";
 import "./Hero.css";
+import background from "../assets/back.jpeg"; 
 
 function Hero() {
   return (
-    <section id="home" className="hero container">
+    <section
+      id="home"
+      className="hero container"
+      style={{
+        backgroundImage: `url(${background})`,
+      }}
+    >
       <h1>
         Hi, I'm <span className="highlight">Subash Katwal</span>
       </h1>
       <h3>AI & Machine Learning Engineer</h3>
       <p>
-        I create intelligent systems with a focus on deep learning, natural language processing, and data-driven solutions.
+        I create intelligent systems with a focus on deep learning, natural language
+        processing, and data-driven solutions.
       </p>
       <div>
         {/* View My Work → GitHub */}
@@ -21,7 +29,7 @@ function Hero() {
           <button className="btn btn-primary">View My Work</button>
         </a>
 
-       
+        {/* Download CV */}
         <a
           href="https://drive.google.com/file/d/1tGO8tLxL94jE-0Do0IMZDYMS7QjIoAN3/view?usp=drive_link"
           target="_blank"
